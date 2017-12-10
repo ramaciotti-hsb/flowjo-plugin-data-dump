@@ -3,16 +3,17 @@
 Note: This plugin is to be used in conjuction with [flowjo-plugin-testbed](https://github.com/nicbarker/flowjo-plugin-testbed)
 
 ## Usage
-- Download the plugin .jar from the releases page
+- Download the data-dump plugin .jar from the [releases page](https://github.com/nicbarker/flowjo-plugin-data-dump/releases)
 - Place it in your `/Applications/plugins` directory or windows equivalent
 - Start FlowJo
 - Select a sample or node then click Workspace -> Plugins -> FlowJoPluginDataDump
-- It will save files to the output folder and give you a popup window that says something like this:
-- Import [flowjo-plugin-testbed.jar](https://github.com/nicbarker/flowjo-plugin-testbed) and call the following on your plugin:
+- It will save files to the output folder and give you a command to copy paste that looks like this:
 ```Java
 invokeAlgorithm(FlowJoPluginTestbed.getFcmlFromFile("/some/directory/FlowJo Plugin Data Dump/fcmlQueryElement.xml"), FlowJoPluginTestbed.createFileObject("/some/directory/FlowJo Plugin Data Dump/st_HM-1_CHECK192_001..ExtNode.csv"), FlowJoPluginTestbed.createFileObject("/some/directory/FlowJo Plugin Data Dump"));
 ```
-In your plugin, create a main function and call the `invokeAlgorithm()` from the previous step
+- Download the flowjo-plugin-testbed `.jar` from the [releases page](https://github.com/nicbarker/flowjo-plugin-testbed/releases)
+- Add [flowjo-plugin-testbed.jar](https://github.com/nicbarker/flowjo-plugin-testbed) to your classpath
+- In your plugin, create a main function and call the `invokeAlgorithm()` template from the previous step
 ```Java
     public static void main(String[] args) {
         YourPlugin plugin = new YourPlugin();
@@ -23,8 +24,6 @@ In your plugin, create a main function and call the `invokeAlgorithm()` from the
         }
     }
 ```
-
-- You'll now be able to use standard Java development and debugging practise to test if your plugin works.
 
 ## Rationale
 The standard cycle for developing and debugging [FlowJo](https://www.flowjo.com/) plugins can be quite painful, and usually involves some variation of the following:
