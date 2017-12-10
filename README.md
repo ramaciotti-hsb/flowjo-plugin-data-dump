@@ -36,7 +36,7 @@ The standard cycle for developing and debugging [FlowJo](https://www.flowjo.com/
 - Wait for FlowJo to finish scanning for .jar files
 - Run the plugin and check the console for errors
 
-Sometimes this process can take upwards of 5 minutes for a single round trip, which is not feasible if you're developing a plugin or have a programming style that requires a lot of back and forth debugging. By using this in combination with [flowjo-plugin-testbed](https://github.com/nicbarker/flowjo-plugin-testbed), you'll be able to get quick debugging 
+Sometimes this process can take upwards of 5 minutes for a single round trip, which is not feasible if you're developing a plugin or have a programming style that requires a lot of back and forth debugging. By using this in combination with [flowjo-plugin-testbed](https://github.com/nicbarker/flowjo-plugin-testbed), you'll be able to get quick debugging.
 
 ## Details
 If you're interested in creating plugins for Flowjo, chances are you've read the [FlowJo Plugin Development Guide](https://flowjollc.gitbooks.io/flowjo-plugin-developers-guide/content/).
