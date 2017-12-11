@@ -18,7 +18,7 @@ task csvChannelJar(type: com.github.jengelman.gradle.plugins.shadow.tasks.Shadow
     classifier = 'all'
     from(sourceSets.main.output) {
         baseName = 'FlowJoPluginDataDumpCSVChannel'
-        include "org/ramaciotti/utilities/csvscale/**"
+        include "org/ramaciotti/utilities/csvchannel/**"
     }
     configurations = [project.configurations.compile]
 }
