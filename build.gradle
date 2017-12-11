@@ -15,24 +15,30 @@ dependencies {
 }
 
 task csvChannelJar(type: com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar) {
+    classifier = 'all'
     from(sourceSets.main.output) {
         baseName = 'FlowJoPluginDataDumpCSVChannel'
-        include "org/ramaciotti/utilities/csvchannel/**"
+        include "org/ramaciotti/utilities/csvscale/**"
     }
+    configurations = [project.configurations.compile]
 }
 
 task csvScaleJar(type: com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar) {
+    classifier = 'all'
     from(sourceSets.main.output) {
         baseName = 'FlowJoPluginDataDumpCSVScale'
         include "org/ramaciotti/utilities/csvscale/**"
     }
+    configurations = [project.configurations.compile]
 }
 
 task fcsJar(type: com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar) {
+    classifier = 'all'
     from(sourceSets.main.output) {
         baseName = 'FlowJoPluginDataDumpFCS'
         include "org/ramaciotti/utilities/fcs/**"
     }
+    configurations = [project.configurations.compile]
 }
 
 task buildAll(dependsOn: ['csvChannelJar', 'csvScaleJar', 'fcsJar'])
