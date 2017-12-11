@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlowJoPluginDataDump.iml" filepath="$PROJECT_DIR$/.idea/modules/FlowJoPluginDataDump.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlowJoPluginDataDump_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FlowJoPluginDataDump_main.iml" group="FlowJoPluginDataDump" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/FlowJoPluginDataDump_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FlowJoPluginDataDump_test.iml" group="FlowJoPluginDataDump" />
     </modules>
   </component>

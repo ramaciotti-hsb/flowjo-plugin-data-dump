@@ -657,6 +657,7 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module" module-name="FlowJoPluginDataDump_main" />
   </component>
   <component name="TestModuleProperties" production-module="FlowJoPluginDataDump_main" />
 </module>
